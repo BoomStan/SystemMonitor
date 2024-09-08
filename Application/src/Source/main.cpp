@@ -1,7 +1,7 @@
 #include "../Headers/ApplicationLoop.h"
 #include "../Headers/BackendGLFW.h"
 #include "../Headers/BackendImGui.h"
-// Callback function to adjust viewport when the window size changes
+
 Application app;
 
 int main() 
@@ -10,7 +10,9 @@ int main()
 
 	while (!glfwWindowShouldClose(app.GetBackendGLFW().GetWindow()) )
 	{
+		app.EarlyUpdate();
 		app.Update();
+		app.PostUpdate();
 	}
 
 	app.Stop();

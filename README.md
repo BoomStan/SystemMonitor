@@ -1,11 +1,12 @@
-# OpenGL + GLFW + ImGui Docking Template
+System Monitor
+Overview
 
-This repository is a simple template to kickstart a project using OpenGL for rendering, GLFW for window management, 
-and ImGui with docking features for a modern UI. It provides a minimal setup with boilerplate code, 
-making it easier for you to start building your application.
-
+System Monitor is a lightweight tool designed to display essential system information without including GPU information or CPU temperature. It provides users with a clean and simple way to monitor their machine's key performance metrics.
 Features
-    OpenGL for high-performance 2D and 3D rendering.
-    GLFW for creating windows, handling inputs, and managing OpenGL contexts.
-    ImGui with docking support for creating a modern and flexible GUI.
-    Minimalistic structure to help you get started quickly.
+
+    CPU Usage: Displays the current usage percentage of each CPU core.
+    Memory Usage: Shows the total, used, and available memory (RAM).
+    Disk Usage: Monitors disk space for the system's partitions.
+    Network Statistics: Provides information on network bandwidth, including current upload and download speeds.
+    System Uptime: Tracks how long the system has been running.
+    Operating System Info: Displays the OS name, version, and architecture.

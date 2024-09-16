@@ -1,5 +1,6 @@
 #include "../Headers/ApplicationLoop.h"
 #include "../Headers/CpuInfo.h"
+#include "../Headers/MemoryInfo.h"
 #include <vector>
 #include <memory>
 
@@ -26,6 +27,7 @@ Application::~Application()
 void Application::MonitorsInit() 
 {
 	monitors.push_back(std::make_unique<CpuInfo>());
+	monitors.push_back(std::make_unique<MemoryInfo>());
 }
 
 void Application::StartMonitors() {
@@ -77,9 +79,10 @@ void Application::EarlyUpdate()
 
 void Application::Update() 
 {
+	backend_imgui.ImGuiDockingViewport();
 	//application Update goes here
 	DrawMonitors();
-	backend_imgui.ImGuiRedraw();
+
 }
 
 void Application::PostUpdate()

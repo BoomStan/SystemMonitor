@@ -157,6 +157,7 @@
     <ClCompile Include="src\Source\main.cpp" />
     <ClCompile Include="src\Source\MonitorBase.cpp" />
     <ClCompile Include="src\Source\SystemInfo\CpuInfo.cpp" />
+    <ClCompile Include="src\Source\SystemInfo\MemoryInfo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="External\glad\include\glad\glad.h" />
@@ -176,6 +177,7 @@
     <ClInclude Include="src\Headers\BackendGLFW.h" />
     <ClInclude Include="src\Headers\BackendImGui.h" />
     <ClInclude Include="src\Headers\CpuInfo.h" />
+    <ClInclude Include="src\Headers\MemoryInfo.h" />
     <ClInclude Include="src\Headers\MonitorBase.h" />
   </ItemGroup>
   <ItemGroup>

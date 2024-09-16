@@ -7,6 +7,8 @@ class Application {
 private:
 	void MonitorsInit();
 	void DrawMonitors();
+	void StartMonitors();
+	void StopMonitors();
 public:
 	Application();
 	~Application();

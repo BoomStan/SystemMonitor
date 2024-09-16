@@ -14,8 +14,9 @@ public:
     ~BackendImGui();
     bool Initialize(GLFWwindow* window);
     ImGuiIO &GetImGuiIO();
+    ImGuiStyle& GetImGuiStyle();
     void ImGuiBegin();
-    void ImGuiRedraw();
+    void ImGuiDockingViewport();
     void ImGuiEnd();
     void Cleanup();
 };

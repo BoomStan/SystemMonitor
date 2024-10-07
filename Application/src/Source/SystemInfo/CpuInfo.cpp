@@ -45,9 +45,6 @@ void CpuInfo::Display()
         ImGui::ProgressBar(coreUsages[i] / 100.0f, ImVec2(-FLT_MIN, 0));  // FLT_MIN makes it take the full width of the window
     }
     ImGui::EndChild();  // End the child frame
-    ImGui::BeginChild("Cpu Data", ImVec2(0,0), true);
-
-    ImGui::EndChild();
     ImGui::End();  // End the main window
 }
 

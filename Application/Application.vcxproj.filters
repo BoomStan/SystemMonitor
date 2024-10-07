@@ -63,6 +63,9 @@
     <ClCompile Include="src\Source\SystemInfo\NetworkInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Source\SystemInfo\DiskInformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="External\glad\include\KHR\khrplatform.h">
@@ -123,6 +126,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Headers\NetworkInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Headers\DiskInformation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

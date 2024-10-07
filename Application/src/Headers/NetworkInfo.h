@@ -13,10 +13,10 @@
 
 class NetworkInfo : public MonitorBase {
 public:
-    void Start();
-    void Display();
-    void Stop();
-
+    void Start() override;
+    void Display() override;
+    void Stop() override;
+     
 private:
     long long lastBytesSent = 0;
     long long lastBytesRecv = 0;

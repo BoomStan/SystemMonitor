@@ -62,7 +62,6 @@ void BackendImGui::ImGuiDockingViewport()
     ImGui::DockSpaceOverViewport(ImGui::GetMainViewport()->ID);
     GetImGuiStyle().Colors[ImGuiCol_DockingEmptyBg] = ImVec4(0.06, 0.06, 0.06, 1.0);
     GetImGuiStyle().Colors[ImGuiCol_DockingPreview] = ImVec4(0.15, 0.17, 1.00, 1.0);
-    ImGui::ShowDemoWindow();
 }
 
 void BackendImGui::ImGuiEnd() 

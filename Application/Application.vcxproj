@@ -157,6 +157,7 @@
     <ClCompile Include="src\Source\main.cpp" />
     <ClCompile Include="src\Source\MonitorBase.cpp" />
     <ClCompile Include="src\Source\SystemInfo\CpuInfo.cpp" />
+    <ClCompile Include="src\Source\SystemInfo\DiskInformation.cpp" />
     <ClCompile Include="src\Source\SystemInfo\MemoryInfo.cpp" />
     <ClCompile Include="src\Source\SystemInfo\NetworkInfo.cpp" />
   </ItemGroup>
@@ -178,6 +179,7 @@
     <ClInclude Include="src\Headers\BackendGLFW.h" />
     <ClInclude Include="src\Headers\BackendImGui.h" />
     <ClInclude Include="src\Headers\CpuInfo.h" />
+    <ClInclude Include="src\Headers\DiskInformation.h" />
     <ClInclude Include="src\Headers\MemoryInfo.h" />
     <ClInclude Include="src\Headers\MonitorBase.h" />
     <ClInclude Include="src\Headers\NetworkInfo.h" />

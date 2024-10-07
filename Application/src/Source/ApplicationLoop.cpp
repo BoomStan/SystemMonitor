@@ -2,6 +2,7 @@
 #include "../Headers/CpuInfo.h"
 #include "../Headers/MemoryInfo.h"
 #include "../Headers/NetworkInfo.h"
+#include "../Headers/DiskInformation.h"
 #include <vector>
 #include <memory>
 
@@ -30,6 +31,7 @@ void Application::MonitorsInit()
 	monitors.push_back(std::make_unique<CpuInfo>());
 	monitors.push_back(std::make_unique<MemoryInfo>());
 	monitors.push_back(std::make_unique<NetworkInfo>());
+	monitors.push_back(std::make_unique<DiskInformation>());
 }
 
 void Application::StartMonitors() {

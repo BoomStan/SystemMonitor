@@ -1,6 +1,5 @@
-#include "../Headers/BackendImGui.h"
-
 #pragma once
+#include "../Headers/BackendImGui.h"
 
 class MonitorBase {
 public:

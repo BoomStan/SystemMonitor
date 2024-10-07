@@ -10,6 +10,7 @@
 #include <mutex>          // For std::mutex
 #include <thread>         // For std::thread
 #include <atomic> 
+#include <iphlpapi.h>
 
 
 
@@ -20,9 +21,9 @@ class MemoryInfo : public MonitorBase
 public:
     MemoryInfo();
 	struct ProcessMemoryInfo;
-    void Start();
-    void Display();
-    void Stop();
+    void Start() override;
+    void Display() override;
+    void Stop() override;
 
 private:
     void getSystemMemoryInfo(MEMORYSTATUSEX& memInfo);
